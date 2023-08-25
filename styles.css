@@ -116,7 +116,9 @@ body {
 .board.o .cell:not(.x):not(.o):hover::after {
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
-  background-color: rgba(252, 198, 0, 0.879);
+  background-color: rgba(94, 74, 0, 0.879);
+   /* background-color: rgba(252, 198, 0, 0.879); */
+
 }
 
 h1 {

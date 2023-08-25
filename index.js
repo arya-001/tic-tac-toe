@@ -1,7 +1,7 @@
 //Players
 const X = "x";
 const O = "o";
-startGame();
+
 
 // Grid Combinations to win
 const WIN_COMBO = [
@@ -30,11 +30,9 @@ function updateScoreboard() {
   //individual cell elements
 const cellElements = document.querySelectorAll("[data-cell]");
 //next bit
-let nextTurn = false;
+let nextTurn;
 // Table//All cells/<div</div>
 const board = document.getElementById("board");
-
-
 //Dialogue Box Elements for Win/Draw
 const winnerMessageElement = document.getElementById("winnerMessage");
 const winnerTextElement = document.querySelector("[winnerText]");
@@ -53,7 +51,7 @@ const playButton = document.getElementById("okBtn");
 //     startGame();
 //     closeModal(); // Close the modal
 //   });
-
+startGame();
 
   //############################################################################//
   const opponentRadio = document.getElementById("r0");
